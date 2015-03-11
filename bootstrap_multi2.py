@@ -95,8 +95,8 @@ def word_scoring(pattern_file,candidate_word,category,pattern_dic,ins_dic):
 def bootstrap(category_file,pattern_file):
     (category,n,ins_pattern,ins_dic,pattern_dic) = create_factor(category_file,pattern_file)
     candidate_word = pattern_scoring(pattern_file,category,n,ins_pattern,ins_dic,1)
-  word_scoring(pattern_file,candidate_word,category,pattern_dic,ins_dic)
+    word_scoring(pattern_file,candidate_word,category,pattern_dic,ins_dic)
 
 if __name__ =="__main__":
     import sys
-    bootstrap(sys.argv[1],sys.argv[2])
+    bootstrap(sys.argv[1],sys.argv[2]) #1:インプットファイル 2:パターンファイル
